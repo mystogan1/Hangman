@@ -1,9 +1,10 @@
 import random
-
+import word_list
+import ascii_art
 
 end_of_game = False
 
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(word_list.words)
 word_length = len(chosen_word)
 
 # Create a variable called 'lives' to keep track of the number of lives left.
@@ -18,7 +19,7 @@ display = []
 for _ in range(word_length):
     display += "_"
 
-
+print(ascii_art.logo)
 print('''
                 Welcome to the hangman.py
                 all words are school related
@@ -66,4 +67,4 @@ while not end_of_game:
             ''')
 
     # print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
-    print(stages[lives])
+    print(ascii_art.stages[lives])
