@@ -1,65 +1,8 @@
 import random
 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
 
 end_of_game = False
-word_list = ['school', 'classroom', 'curriculum', 'chalkboard', 'homework', 'lesson', 'study ', 'lecture ', 'student', 'teach',
-             'educational', 'students', 'classes', 'kindergarten', 'dormitory', 'teacher', 'math', 'education', 'playground', 'semester', ]
+
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
